@@ -9,6 +9,23 @@ yay -S quickshell-allflags-git
 paru -S quickshell-allflags-git
 ```
 
+## Installation from source
+```bash
+makepkg --printsrcinfo > .SRCINFO
+makepkg -sf
+sudo pacman -U quickshell-allflags-git-*.pkg.tar.zst
+```
+
+## checks :
+```bash
+# Check if quickshell is installed
+which quickshell
+# Check version
+quickshell --version
+# See what files were installed
+pacman -Ql quickshell-allflags-git
+```
+
 ## Features
 
 This build includes ALL QuickShell features:
