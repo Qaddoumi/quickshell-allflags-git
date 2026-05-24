@@ -11,8 +11,8 @@ paru -S quickshell-allflags-git
 
 ## Installation from source
 ```bash
-makepkg --printsrcinfo > .SRCINFO
 makepkg -sf
+makepkg --printsrcinfo > .SRCINFO
 sudo pacman -U quickshell-allflags-git-*.pkg.tar.zst
 ```
 
